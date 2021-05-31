@@ -1,0 +1,962 @@
+/*! CSS Used from: https://www.flyreel.co/css/main.css */
+
+
+.section {
+    display: block;
+}
+
+/** {*/
+/*    -webkit-tap-highlight-color: transparent;*/
+/*}*/
+
+.hero {
+    height: 62.5vw;
+    position: relative;
+    color: #fff;
+    background: #fff;
+}
+
+.hero:before,.hero:after {
+    content: " ";
+    display: table;
+}
+
+ .hero:after {
+    clear: both;
+}
+
+ .hero .right {
+    float: right;
+    width: 62.5vw;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+ .hero .right .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: #000;
+}
+
+ .hero .left {
+    position: absolute;
+    width: 52.5vw;
+    height: 45vw;
+    top: 50%;
+    margin-top: -22.5vw;
+    z-index: 3;
+     background: #82f362;
+}
+
+ .hero .left .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: rgba(10, 5, 43, 0.7);
+}
+
+ .hero .left .room-viewer {
+    height: 100%;
+    padding-bottom: 0;
+}
+
+ .hero .left .room-viewer .interior-view {
+    width: 220.5%;
+    left: -90%;
+}
+
+ .hero .left .room-viewer .exterior-view {
+    height: 100%;
+    width: 208.9795918%;
+    background: url("https://www.flyreel.co/resources/home/hero-outdoors.jpg") no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    opacity: 0;
+}
+
+ .hero .left .room-viewer .exterior-view .label {
+    width: 5%;
+}
+
+ .hero .left .room-viewer .shapes {
+    z-index: 3;
+}
+
+ .hero .left .room-viewer .labels {
+    z-index: 4;
+}
+
+ .hero .left .room-viewer .label {
+    opacity: 1;
+}
+
+ .hero .left .room-viewer .label .text {
+    font-size: 0.8vw;
+}
+
+ .hero .left .room-viewer .shape {
+    opacity: 1;
+}
+
+ .hero .left .room-viewer .shape svg polygon,  .hero .left .room-viewer .shape svg circle,  .hero .left .room-viewer .shape svg path {
+    fill: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+ .hero .left .room-viewer .shape.ac {
+    width: 5.267142857%;
+    height: 6.990234375%;
+    top: 50.4%;
+    left: 73.7%;
+}
+
+ .hero .left .room-viewer .shape.stucco {
+    width: 4.52381%;
+    height: 7.519531%;
+    top: 32.4%;
+    left: 52.55%;
+}
+
+ .hero .left .room-viewer .shape.stairsExt {
+    width: 7.666667%;
+    height: 4.785156%;
+    top: 58%;
+    left: 39.5%;
+}
+
+ .hero .left .room-viewer .shape.pool {
+    width: 44.619048%;
+    height: 15.039063%;
+    top: 60.5%;
+    left: -3.8%;
+}
+
+ .hero .left .room-viewer .label.sprinkler,  .hero .left .room-viewer .label.floor,  .hero .left .room-viewer .shape.sprinkler,  .hero .left .room-viewer .shape.floor,  .hero .left .room-viewer .label.tv,  .hero .left .room-viewer .shape.tv,  .hero .left .room-viewer .label.fireplace,  .hero .left .room-viewer .shape.fireplace {
+    display: none;
+}
+
+ .hero .left .room-viewer .label.stove {
+    top: 60%;
+    left: 65%;
+}
+
+ .hero .left .room-viewer .label.ac {
+    top: 43%;
+    left: 70%;
+}
+
+ .hero .left .room-viewer .label.ac .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/tv.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .hero .left .room-viewer .label.stucco {
+    top: 24%;
+    left: 49%;
+}
+
+ .hero .left .room-viewer .label.stucco .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/tv.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .hero .left .room-viewer .label.stairsExt {
+    top: 49%;
+    left: 38%;
+}
+
+ .hero .left .room-viewer .label.stairsExt .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/tv.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .hero .left .room-viewer .label.pool {
+    top: 54%;
+    left: 15%;
+}
+
+ .hero .left .room-viewer .label.pool .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/tv.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .hero .copy {
+    align-self: center;
+    padding: 0 4.8125vw 0 12.125vw;
+    position: relative;
+    z-index: 4;
+}
+
+ .hero .pre-heading {
+    text-transform: uppercase;
+    font-size: 0.875vw;
+    color: #797E8A;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 0.075em;
+    margin-bottom: 1.4375vw;
+}
+
+ .hero h1 {
+    font-size: 5.625vw;
+    font-family: 'Gilroy-Medium';
+    line-height: 1.077778;
+}
+
+ .hero .button {
+    margin-top: 2.6875vw;
+}
+
+ .hero .button .arrow {
+    width: 0.5625vw;
+    height: 0.5625vw;
+    margin-left: 0.8125vw;
+    background: url("https://www.flyreel.co/resources/common/arrow-up.svg");
+    background-size: 100%;
+    display: inline-block;
+}
+
+ .hero .pattern {
+    bottom: 3.625vw;
+    left: 8.1875vw;
+    height: 21.9375vw;
+    width: 15.875vw;
+    z-index: 2;
+}
+
+ .hero.revealed .background {
+    -webkit-animation: slideLeft 1000ms cubic-bezier(0.77, 0, 0.175, 1) both;
+    -moz-animation: slideLeft 1000ms cubic-bezier(0.77, 0, 0.175, 1) both;
+    -ms-animation: slideLeft 1000ms cubic-bezier(0.77, 0, 0.175, 1) both;
+    -o-animation: slideLeft 1000ms cubic-bezier(0.77, 0, 0.175, 1) both;
+    animation: slideLeft 1000ms cubic-bezier(0.77, 0, 0.175, 1) both;
+}
+
+ .hero.revealed .left {
+    -webkit-animation: slideRight 1000ms cubic-bezier(0.77, 0, 0.175, 1) both 300ms;
+    -moz-animation: slideRight 1000ms cubic-bezier(0.77, 0, 0.175, 1) both 300ms;
+    -ms-animation: slideRight 1000ms cubic-bezier(0.77, 0, 0.175, 1) both 300ms;
+    -o-animation: slideRight 1000ms cubic-bezier(0.77, 0, 0.175, 1) both 300ms;
+    animation: slideRight 1000ms cubic-bezier(0.77, 0, 0.175, 1) both 300ms;
+}
+
+ .hero.revealed .pre-heading {
+    -webkit-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 400ms;
+    -moz-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 400ms;
+    -ms-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 400ms;
+    -o-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 400ms;
+    animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 400ms;
+}
+
+ .hero.revealed h1 {
+    -webkit-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 500ms;
+    -moz-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 500ms;
+    -ms-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 500ms;
+    -o-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 500ms;
+    animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 500ms;
+}
+
+ .hero.revealed .button {
+    -webkit-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 750ms;
+    -moz-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 750ms;
+    -ms-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 750ms;
+    -o-animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 750ms;
+    animation: slideDownAndFadeIn 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) both 750ms;
+}
+
+ .hero.revealed .pattern {
+    -webkit-animation: fadeIn 500ms linear both 1000ms;
+    -moz-animation: fadeIn 500ms linear both 1000ms;
+    -ms-animation: fadeIn 500ms linear both 1000ms;
+    -o-animation: fadeIn 500ms linear both 1000ms;
+    animation: fadeIn 500ms linear both 1000ms;
+}
+
+@media screen and (max-width: 800px) {
+     .hero {
+        height: auto;
+    }
+
+     .hero .right {
+        float: none;
+        width: 100%;
+        padding: 12vw 6vw;
+    }
+
+     .hero .left {
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+        padding-top: 85.7143%;
+    }
+
+     .hero .copy {
+        padding: 0;
+    }
+
+     .hero h1 {
+        font-size: 8.433735vw;
+        line-height: 1.228571;
+    }
+
+     .hero .pre-heading {
+        font-size: 3.373494vw;
+        margin-bottom: 4vw;
+    }
+
+     .hero a.button {
+        margin-top: 10.60241vw;
+    }
+
+     .hero .pattern {
+        bottom: 64vw;
+        left: 54.1875vw;
+        height: 45.9375vw;
+        width: 39.875vw;
+    }
+
+     .hero .room-viewer .labels .label .text {
+        font-size: 3vw;
+        letter-spacing: 0.142857em;
+    }
+
+     .hero .left .room-viewer .interior-view .shapes {
+        background-image: url("https://www.flyreel.co/resources/home/mobile/room-shapes-hero.png");
+    }
+}
+
+.room-viewer {
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+}
+
+.room-viewer .interior-view {
+    height: 100%;
+    width: 144.5625%;
+    background: url("https://www.flyreel.co/resources/home/room.jpg") no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    top: 0;
+    left: -22.28125%;
+}
+
+.room-viewer .shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.room-viewer .shapes .shape {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-transition: 500ms opacity linear;
+    -moz-transition: 500ms opacity linear;
+    -ms-transition: 500ms opacity linear;
+    -o-transition: 500ms opacity linear;
+    transition: 500ms opacity linear;
+}
+
+.room-viewer .shapes .shape svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.room-viewer .shapes .shape.tv {
+    width: 11.731268%;
+    height: 18.121296%;
+    top: 39.2%;
+    left: 1.1%;
+}
+
+.room-viewer .shapes .shape.fireplace {
+    width: 9.978386%;
+    height: 13.074074%;
+    top: 68.5%;
+    left: 2.4%;
+}
+
+.room-viewer .shapes .shape.stairs {
+    width: 20.2%;
+    height: 49.021296%;
+    top: 30.9%;
+    left: 26.3%;
+}
+
+.room-viewer .shapes .shape.stove {
+    width: 9.582133%;
+    height: 1.296296%;
+    top: 65.5%;
+    left: 58.1%;
+}
+
+.room-viewer .shapes .shape.countertop {
+    width: 8.717579%;
+    height: 2.962963%;
+    top: 69.6%;
+    left: 51.5%;
+}
+
+.room-viewer .shapes .shape.sprinkler {
+    width: 1.188761%;
+    height: 3.055556%;
+    top: 4.5%;
+    left: 78.65%;
+}
+
+.room-viewer .shapes .shape.floor {
+    width: 4.603746%;
+    height: 9.846296%;
+    top: 88.4%;
+    left: 80.3%;
+}
+
+.room-viewer .labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.room-viewer .labels .label {
+    display: flex;
+    height: 12.037037%;
+    width: 4.682997%;
+    position: absolute;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.room-viewer .labels .icon {
+    height: 100%;
+    width: 3.75vw;
+    background: #5E0CEF;
+}
+
+.room-viewer .labels .text {
+    position: absolute;
+    font-size: 1.3125vw;
+    letter-spacing: 0.142857em;
+    font-family: 'Share Tech Mono', monospace;
+    color: #fff;
+    text-transform: uppercase;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -30%;
+}
+
+.room-viewer .labels .text.align-bottom {
+    top: auto;
+    bottom: -35%;
+}
+
+.room-viewer .labels .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.room-viewer .labels .circles div {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.room-viewer .labels .circles div:nth-child(1) {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: 0 0.75vw 1.6875vw rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0 0.75vw 1.6875vw rgba(0, 0, 0, 0.21);
+    -ms-box-shadow: 0 0.75vw 1.6875vw rgba(0, 0, 0, 0.21);
+    -o-box-shadow: 0 0.75vw 1.6875vw rgba(0, 0, 0, 0.21);
+    box-shadow: 0 0.75vw 1.6875vw rgba(0, 0, 0, 0.21);
+}
+
+.room-viewer .labels .circles div:nth-child(2) {
+    background: rgba(255, 255, 255, 0.37);
+    width: 68%;
+    height: 68%;
+    left: 16%;
+    top: 16%;
+}
+
+.room-viewer .labels .circles div:nth-child(3) {
+    width: 38%;
+    height: 38%;
+    top: 31%;
+    left: 31%;
+}
+
+.room-viewer .labels .label.tv {
+    top: 33%;
+    left: 3%;
+}
+
+.room-viewer .labels .label.tv .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/tv.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room-viewer .labels .label.fireplace {
+    top: 63%;
+    left: 6%;
+}
+
+.room-viewer .labels .label.fireplace .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/fireplace.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room-viewer .labels .label.stairs {
+    top: 36%;
+    left: 34%;
+}
+
+.room-viewer .labels .label.stairs .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/stairs.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room-viewer .labels .label.countertop {
+    top: 65%;
+    left: 49%;
+}
+
+.room-viewer .labels .label.countertop .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/countertop.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room-viewer .labels .label.stove {
+    top: 61%;
+    left: 56%;
+}
+
+.room-viewer .labels .label.stove .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/stove.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room-viewer .labels .label.sprinkler {
+    top: 8%;
+    left: 74%;
+}
+
+.room-viewer .labels .label.sprinkler .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/sprinkler.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room-viewer .labels .label.floor {
+    top: 83.5%;
+    left: 85%;
+}
+
+.room-viewer .labels .label.floor .icon {
+    background: url("https://www.flyreel.co/resources/home/room-viewer/icons/floor.png"), #fff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    .room-viewer .label .text {
+        position: absolute;
+        font-size: 4.9875vw;
+        letter-spacing: 0.142857em;
+    }
+
+    .room-viewer .interior-view .shapes {
+        background: url("https://www.flyreel.co/resources/home/mobile/room-shapes.png") no-repeat 0 0;
+        background-size: 100%;
+    }
+
+    .room-viewer .exterior-view .shapes {
+        background: url("https://www.flyreel.co/resources/home/mobile/exterior-shapes.png") no-repeat 0 0;
+        background-size: auto 100%;
+    }
+
+    .room-viewer .shapes .shape {
+        display: none;
+    }
+
+    .room-viewer .labels .circles div:nth-child(1) {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.button {
+    padding: 1.25vw 3.125vw;
+    font-size: 1vw;
+    background: #5E0CEF;
+    font-family: 'Gilroy-Medium';
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button .arrow {
+    width: 0.75vw;
+    height: 0.75vw;
+    margin-left: 0.8125vw;
+    background: url("https://www.flyreel.co/resources/common/arrow-up.svg");
+    background-size: 100%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+    .button {
+        padding: 4.819277vw 12.048193vw;
+        font-size: 3.855422vw;
+    }
+
+    .button .arrow {
+        width: 2.891566vw;
+        height: 2.891566vw;
+        margin-left: 3.13253vw;
+    }
+}
+
+.pattern {
+    position: absolute;
+    background: url("https://www.flyreel.co/resources/common/dot.png") repeat;
+    background-size: 0.88vw;
+    z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .pattern {
+        background-size: 3.4vw;
+    }
+}
+
+/**, *:before, *:after {*/
+/*    box-sizing: border-box;*/
+/*    letter-spacing: -0.0125em;*/
+/*}*/
+
+/*! CSS Used keyframes */
+@-webkit-keyframes slideLeft {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-moz-keyframes slideLeft {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-ms-keyframes slideLeft {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideRight {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-moz-keyframes slideRight {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-ms-keyframes slideRight {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideDownAndFadeIn {
+    0% {
+        -webkit-transform: translate3d(0, -4vw, 0);
+        -moz-transform: translate3d(0, -4vw, 0);
+        -ms-transform: translate3d(0, -4vw, 0);
+        -o-transform: translate3d(0, -4vw, 0);
+        transform: translate3d(0, -4vw, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slideDownAndFadeIn {
+    0% {
+        -webkit-transform: translate3d(0, -4vw, 0);
+        -moz-transform: translate3d(0, -4vw, 0);
+        -ms-transform: translate3d(0, -4vw, 0);
+        -o-transform: translate3d(0, -4vw, 0);
+        transform: translate3d(0, -4vw, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes slideDownAndFadeIn {
+    0% {
+        -webkit-transform: translate3d(0, -4vw, 0);
+        -moz-transform: translate3d(0, -4vw, 0);
+        -ms-transform: translate3d(0, -4vw, 0);
+        -o-transform: translate3d(0, -4vw, 0);
+        transform: translate3d(0, -4vw, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownAndFadeIn {
+    0% {
+        -webkit-transform: translate3d(0, -4vw, 0);
+        -moz-transform: translate3d(0, -4vw, 0);
+        -ms-transform: translate3d(0, -4vw, 0);
+        -o-transform: translate3d(0, -4vw, 0);
+        transform: translate3d(0, -4vw, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: 'Share Tech Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sharetechmono/v10/J7aHnp1uDWRBEqV98dVQztYldFcLowEF.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.eot");
+    src: url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.eot#iefix") format("embedded-opentype"), url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.woff2") format("woff2"), url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.woff") format("woff"), url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.ttf") format("truetype");
+}
