@@ -73,7 +73,7 @@ const useStyles = makeStyles(theme => ({
         '@media only screen and (max-width: 800px)': {
             float: 'none',
             width: '100%',
-            // padding: '12vw 6vw',
+            padding: '12vw 6vw',
         },
         '&:after': {
             content: "' '",
@@ -123,9 +123,8 @@ const useStyles = makeStyles(theme => ({
         fontFamily: 'Gilroy-Medium',
         lineHeight: '1.077778',
         '@media only screen and (max-width: 800px)': {
-            fontSize: "5.625vw",
-            fontFamily: 'Gilroy-Medium',
-            lineHeight: '1.077778',
+            fontSize: '8.433735vw',
+            lineHeight: '1.228571',
         }
 
     },
@@ -147,10 +146,21 @@ const useStyles = makeStyles(theme => ({
         position: 'absolute',
         background: 'url(https://www.flyreel.co/resources/common/dot.png)',
         backgroundSize: '.88vw',
+        '@media only screen and (max-width: 800px)': {
+            bottom: '64vw',
+            left: '54.1875vw',
+            height: '45.9375vw',
+            width: '39.875vw',
+            // bottom: 64vw;
+            // left: 54.1875vw;
+            // height: 45.9375vw;
+            // width: 39.875vw;
+        }
+
 
     },
     contactUsButton: {
-       ...theme.mainButton,
+        ...theme.mainButton,
 
     }
 
@@ -165,7 +175,7 @@ const HeroSection = () => {
             {/*  Left Section*/}
             <Slide delay={700} triggerOnce={true} direction={'left'} className={classes.left}>
                 <Box>
-                    a
+                    &nbsp;
                 </Box>
             </Slide>
 
@@ -173,28 +183,28 @@ const HeroSection = () => {
 
             <Box className={classes.right}>
 
-                    <Box component={motion.div}
-                         variants={rightVariants}
-                         initial={'hidden'}
-                         animate={'visible'} className={classes.background}/>
-                    <Box component={motion.div}
-                         variants={rightVariants}
-                         initial={'hidden'}
-                         animate={'visible'} className={classes.copy}>
-                        <Typography variant={'h4'} className={classes.preHeading}>
-                            Introducing
-                        </Typography>
+                <Box component={motion.div}
+                     variants={rightVariants}
+                     initial={'hidden'}
+                     animate={'visible'} className={classes.background}/>
+                <Box component={motion.div}
+                     variants={rightVariants}
+                     initial={'hidden'}
+                     animate={'visible'} className={classes.copy}>
+                    <Typography variant={'h4'} className={classes.preHeading}>
+                        Introducing
+                    </Typography>
 
-                        <Typography className={classes.copyHeading} variant={'h1'}>
-                            Total property understanding for better insurance outcomes
-                        </Typography>
+                    <Typography className={classes.copyHeading} variant={'h1'}>
+                        Total property understanding for better insurance outcomes
+                    </Typography>
 
-                        <Box className={classes.contactUsButton}>
-                            Contact us
-                        </Box>
-
+                    <Box className={classes.contactUsButton}>
+                        Contact us
                     </Box>
-                    <Box className={classes.pattern}/>
+
+                </Box>
+                <Box className={classes.pattern}/>
 
             </Box>
 
