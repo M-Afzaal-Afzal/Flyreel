@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "latest",
     "clsx": "latest",
+    "framer-motion": "^4.1.17",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",

@@ -17,6 +17,21 @@ const theme = createMuiTheme({
       default: '#fff',
     },
   },
+  mainButton: {
+    padding: '1.25vw 3.125vw',
+    fontSize: '1.2rem',
+    background: '#5E0CEF',
+    fontFamily: 'Gilroy-Medium',
+    color: "#fff",
+    textDecoration:'none',
+    display: 'inline-block',
+    marginTop: '2.6875vw',
+    cursor: 'pointer',
+    '@media only screen and (max-width: 800px)': {
+      marginTop: '10.60241vw',
+
+    },
+  },
 
   overrides: {
     MuiCssBaseline: {
