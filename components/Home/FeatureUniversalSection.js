@@ -7,6 +7,7 @@ const useStyles = makeStyles(theme => ({
     overlay: {
         position: 'relative',
         top: 0,
+        // color: 'white',
         left: 0,
         height: '100%',
         width: '100%',
@@ -87,7 +88,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     title: {
-        color: "white",
+        // color: "white",
         fontSize: '4vw',
         lineHeight: '1.203125',
         fontFamily: 'Helvetica, sans-serif',
@@ -101,7 +102,7 @@ const useStyles = makeStyles(theme => ({
         lineHeight: '1.882353',
         marginTop: '2vw',
         // maxWidth: '30vw',
-        color: 'white',
+        // color: 'white',
         '@media only screen and (max-width: 800px)': {
             fontSize: '3.855422vw',
             lineHeight: '1.75',
@@ -124,34 +125,34 @@ const customAnimation = keyframes`
     transform: translateY(0);
   }`;
 
-const AiSection = () => {
+const FeatureUniversalSection = ({bottomText,color, iconUrl,preHeadingText,heading,bgColor}) => {
 
     const classes = useStyles();
 
     return (
-        <Box className={classes.overlay}>
+        <Box style={{background: bgColor,color: color}} className={classes.overlay}>
             <Box className={classes.copyBlock}>
                 <Reveal keyframes={customAnimation} cascade triggerOnce>
 
                     <Box className={classes.preHeading}>
                         <Box className={classes.iconContainer}>
-                            <Box className={classes.icon}/>
+                            <Box style={{
+                                backgroundImage: `url(${iconUrl}`,
+                            }} className={classes.icon}/>
                         </Box>
 
                         <Typography variant={'body1'} className={classes.preHeadingText}>
-                            FR.02 / Insurance specific computer vision
+                            {preHeadingText}
                         </Typography>
 
                     </Box>
 
                     <Typography variant={'h1'} className={classes.title}>
-                        AI provides the data you need and the experience and protection your customers deserve.
+                        {heading}
                     </Typography>
 
                     <Typography variant={'body1'} className={classes.copy}>
-                        As users scan their property using their smartphone camera, our proprietary computer vision
-                        technology does the heavy lifting, automatically documenting critical property information like
-                        hazards, risks, features, materials and more.
+                        {bottomText}
                     </Typography>
                 </Reveal>
             </Box>
@@ -159,4 +160,4 @@ const AiSection = () => {
     );
 };
 
-export default AiSection;
+export default FeatureUniversalSection;
