@@ -120,7 +120,7 @@ const useStyles = makeStyles(theme => ({
     },
     copyHeading: {
         fontSize: '5.625vw',
-        fontFamily: 'Gilroy-Medium',
+        fontFamily: 'Helvetica,sans-serif',
         lineHeight: '1.077778',
         '@media only screen and (max-width: 800px)': {
             fontSize: '8.433735vw',

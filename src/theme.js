@@ -21,7 +21,7 @@ const theme = createMuiTheme({
     padding: '1.25vw 3.125vw',
     fontSize: '1.2rem',
     background: '#5E0CEF',
-    fontFamily: 'Gilroy-Medium',
+    fontFamily: 'Helvetica, sans-serif',
     color: "#fff",
     textDecoration:'none',
     display: 'inline-block',
@@ -40,7 +40,7 @@ const theme = createMuiTheme({
           WebkitFontSmoothing: 'auto',
         },
         body: {
-          fontFamily: "Gilroy-Medium",
+          fontFamily: "Helvetica, sans-serif",
           fontWeight: '400',
           fontSize: '1rem',
         }

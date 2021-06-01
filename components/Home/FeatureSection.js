@@ -69,7 +69,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: ' center',
         marginTop: '2vw',
         fontSize: '1.125vw',
-        fontFamily: 'Gilroy-Medium',
+        fontFamily: 'Helvetica,sans-serif',
         '@media only screen and (max-width: 800px)': {
             marginTop: '6vw',
             fontSize: '3.375vw',
@@ -111,7 +111,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1vw',
         color: '#fff',
         lineHeight: '1.1875',
-        fontFamily: 'Gilroy-Medium',
+        fontFamily: 'Helvetica,sans-serif',
         position: 'relative',
         '@media only screen and (max-width: 800px)': {
             padding: "1.690821vw 2.898551vw",
@@ -190,7 +190,7 @@ const useStyles = makeStyles(theme => ({
     heading: {
         fontSize: '4vw',
         lineHeight: '1.203125',
-        fontFamily: 'Gilroy-Medium',
+        fontFamily: 'Helvetica,sans-serif',
         '@media only screen and (max-width: 800px)': {
             paddingRight: "6vw",
             fontSize: "7.246377vw",
@@ -255,7 +255,7 @@ const FeatureSection = () => {
                                     </Box>
 
                                     {/* 4th message*/}
-                                    <Box className={`${classes.messageUniversal} ${classes.messageMargin}`}>
+                                    <Box className={`${classes.messageUniversal} ${classes.messageYou} ${classes.messageMargin}`}>
                                         <Box className={`${classes.messageBox} ${classes.yourMessage}`}>
                                             Yes
                                         </Box>

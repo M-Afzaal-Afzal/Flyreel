@@ -1,24 +1,16 @@
-/*@font-face {*/
-/*    font-family: "Gilroy-Medium";*/
-/*    src: url("/fonts/gilory.ttf");*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    font-display: swap;*/
-
-/*}*/
-
 @font-face {
-    font-family: 'Share Tech Mono';
+    font-family: "Helvetica";
+    src: url("/fonts/Helvetica.ttf");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/sharetechmono/v10/J7aHnp1uDWRBEqV98dVQztYldFcLowEF.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium';
-    src: url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.eot");
-    src: url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.eot#iefix") format("embedded-opentype"), url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.woff2") format("woff2"), url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.woff") format("woff"), url("https://www.flyreel.co/fonts/gilroy/3ADA12_9_0.ttf") format("truetype");
+    font-family: "Helvetica";
+    src: url("/fonts/Helvetica-Bold.ttf");
+    font-style: normal;
+    font-weight: bold ;
+    font-display: swap;
 }
 
