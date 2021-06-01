@@ -1,33 +1,66 @@
 import React from 'react';
+import {Slide} from "react-awesome-reveal";
 
-import {Box} from "@material-ui/core";
+import {Box, makeStyles} from "@material-ui/core";
 
-import * as styles from './HeroSection.module.css';
+const useStyles = makeStyles(theme => ({
+    heroSection: {
+        height: '45rem ',
+        width: '100%',
+        color: '#fff',
+        background: '#fff',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
+        gridTemplateRows: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
+        [theme.breakpoints.down('sm')]: {
+            gridTemplateColumns: '1fr',
+            gridTemplateRows: '1fr 1fr',
+        }
+    },
+    left: {
+        // gridArea: 'left',
+        background: 'blue',
+        gridColumn: '1/5',
+        gridRow: '2/8',
+        zIndex: '20',
+        [theme.breakpoints.down('sm')]: {
+            gridColumn: '1/-1',
+            gridRow: '2/3',
+        }
+    },
+    right: {
+        // gridArea: "right",
+        background: theme.palette.primary.main,
+        gridColumn: '4/-1',
+        gridRow: '1/-1',
+        [theme.breakpoints.down('sm')]: {
+            gridColumn: '1/-1',
+            gridRow: '1/2',
+        }
+    }
+
+}))
 
 const HeroSection = () => {
 
+    const classes = useStyles();
 
     return (
-        <Box className={`${styles.hero} ${styles.revealed}`}>
-            <Box className={styles.left}>
-                <Box className={styles.roomViewer}>
-                    test
+        <Box className={classes.heroSection}>
+            {/*  Left Section*/}
+            <Slide delay={700} triggerOnce direction={'left'} className={classes.left}>
+                <Box  >
+                    a
                 </Box>
-            </Box>
+            </Slide>
 
-            <Box className={styles.right}>
-                <div className={styles.background}/>
-                <div className={styles.copy}>
-                    <div className={styles.preHeading}>Introducing</div>
-                    <h1>Total property understanding for better insurance outcomes</h1>
-                    <Box className={styles.button}>
-                        Request Demo
-                        <span className={styles.arrow}/>
-                    </Box>
+            {/* Right Section*/}
 
-                </div>
-                <div className={styles.pattern}/>
-            </Box>
+            <Slide direction={'right'} triggerOnce className={classes.right}>
+                <Box >
+                    a
+                </Box>
+            </Slide>
 
         </Box>
     );

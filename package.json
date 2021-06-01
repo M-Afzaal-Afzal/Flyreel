@@ -8,6 +8,7 @@
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
+    "react-awesome-reveal": "^3.7.1",
     "react-dom": "latest",
     "react-icons": "^4.2.0"
   },
