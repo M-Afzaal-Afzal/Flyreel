@@ -136,9 +136,6 @@ const AiSection = () => {
                     <Box className={classes.preHeading}>
                         <Box className={classes.iconContainer}>
                             <Box className={classes.icon}/>
-                            <Typography variant={'body1'} className={classes.preHeadingText}>
-                                AI provides the data you need and the experience and protection your customers deserve.
-                            </Typography>
                         </Box>
 
                         <Typography variant={'body1'} className={classes.preHeadingText}>
