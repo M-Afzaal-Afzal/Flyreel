@@ -32,7 +32,6 @@ const theme = createMuiTheme({
 
     },
   },
-
   overrides: {
     MuiCssBaseline: {
       '@global': {

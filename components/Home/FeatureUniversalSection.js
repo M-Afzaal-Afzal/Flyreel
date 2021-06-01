@@ -35,7 +35,6 @@ const useStyles = makeStyles(theme => ({
             marginBottom: '9.638554vw',
         }
     },
-
     iconContainer: {
         height: '3.375vw',
         width: '3.375vw',
