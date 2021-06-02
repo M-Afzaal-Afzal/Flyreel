@@ -1,6 +1,36 @@
 import React from 'react';
 import {Box, Button, makeStyles, TextField, Typography} from "@material-ui/core";
 import {useForm, Controller} from "react-hook-form";
+import {motion} from "framer-motion";
+
+const rightVariants = {
+    hidden: {
+        x: '100%',
+
+    },
+    visible: {
+        x: '0',
+        transition: {
+            type: "tween",
+            duration: 1,
+            ease: 'easeInOut'
+        }
+    },
+}
+
+const leftVariants = {
+    hidden: {
+        x: "-100%",
+    },
+    visible: {
+        x: '0',
+        transition: {
+            type: "tween",
+            duration: 1,
+            ease: 'easeInOut'
+        }
+    }
+}
 
 const useStyles = makeStyles(theme => ({
     main: {
@@ -143,7 +173,7 @@ const Contact = () => {
     return (
         <Box className={classes.main}>
 
-            <Box className={classes.right}>
+            <Box variants={rightVariants} initial={'hidden'} animate={'visible'} className={classes.right} component={motion.div}>
                 <Box className={classes.background}/>
 
                 <Box className={classes.copy}>
@@ -169,7 +199,12 @@ const Contact = () => {
 
             </Box>
 
-            <Box className={classes.formBox}>
+            <Box
+                initial={'hidden'}
+                variants={leftVariants}
+                animate={'visible'}
+                component={motion.div}
+                className={classes.formBox}>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Box className={classes.singleInput}>
 
