@@ -3,6 +3,7 @@ import HeroSection from '../components/Home/HeroSection';
 import FeatureSection from "../components/Home/FeatureSection";
 import FeatureUniversalSection from "../components/Home/FeatureUniversalSection";
 import TextWithImage from "../components/Home/TextWithImage";
+import LearnMoreSection from "../components/Home/LearnMoreSection";
 
 export default function Index() {
     return (
@@ -48,6 +49,7 @@ export default function Index() {
                 p3={'Better data, faster, with accelerated data-intake during the underwriting window'}
                 imagUrl={"https://www.flyreel.co/resources/home/mobile/house-3.jpg"}
             />
+            <LearnMoreSection/>
         </>
 
     );
