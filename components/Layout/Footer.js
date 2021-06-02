@@ -49,7 +49,6 @@ const useStyles = makeStyles(theme => ({
     },
     contactUsButton: {
         ...theme.mainButton,
-        '@media only screen and (max-width: 800px)': {},
     },
     contactUsBtnContainer: {
         '@media only screen and (max-width: 800px)': {

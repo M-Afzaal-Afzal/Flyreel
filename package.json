@@ -11,6 +11,7 @@
     "react": "latest",
     "react-awesome-reveal": "^3.7.1",
     "react-dom": "latest",
+    "react-hook-form": "^7.7.1",
     "react-icons": "^4.2.0"
   },
   "scripts": {
